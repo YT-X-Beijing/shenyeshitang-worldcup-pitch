@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 叙事革命 · 深夜食堂 × 平行宇宙叙事Agent</title>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -405,6 +406,10 @@
       <div class="stat"><div class="stat-num" style="color:var(--accent1);">6维</div><div class="stat-label">Reflexion 自评审<br>钩子·金句·情感弧·叙事创新·共鸣·密度</div></div>
       <div class="stat"><div class="stat-num" style="color:var(--accent1);">续写明天</div><div class="stat-label">parent_work_id 连续叙事<br>每日重回，情感图谱持续生长</div></div>
     </div>
+    <div style="margin-top:2em;display:flex;flex-direction:column;align-items:center;gap:.5em;">
+      <canvas id="qr-food" style="border-radius:10px;"></canvas>
+      <span style="font-size:11px;color:var(--muted);">扫码体验 Demo</span>
+    </div>
   </div>
 
   <!-- ===== SLIDE 4: 深夜食堂 痛点与解法 ===== -->
@@ -520,6 +525,10 @@
       <div class="stat"><div class="stat-num" style="color:var(--accent2);">50亿</div><div class="stat-label">全球球迷</div></div>
       <div class="stat"><div class="stat-num" style="color:var(--accent2);">64</div><div class="stat-label">场比赛</div></div>
       <div class="stat"><div class="stat-num" style="color:var(--accent2);">48天</div><div class="stat-label">叙事窗口</div></div>
+    </div>
+    <div style="margin-top:2em;display:flex;flex-direction:column;align-items:center;gap:.5em;">
+      <canvas id="qr-wc" style="border-radius:10px;"></canvas>
+      <span style="font-size:11px;color:var(--muted);">扫码体验 Demo</span>
     </div>
   </div>
 
@@ -698,7 +707,16 @@
     else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); go(cur - 1); }
   });
 
-  // touch
+  // generate QR codes
+  function makeQR(id, url, color) {
+    QRCode.toCanvas(document.getElementById(id), url, {
+      width: 120,
+      margin: 1,
+      color: { dark: color || '#ffffff', light: '#00000000' }
+    });
+  }
+  makeQR('qr-food', 'https://shenye-shitang.pages.dev/pitch/index.html', '#ff6b6b');
+  makeQR('qr-wc',   'https://aifootball.hub.tutucat.icu/', '#4ecdc4');
   let tx = 0;
   document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; });
   document.addEventListener('touchend', e => {
