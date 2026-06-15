@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 叙事革命 · 深夜食堂 × 平行宇宙叙事Agent</title>
-<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -407,7 +406,7 @@
       <div class="stat"><div class="stat-num" style="color:var(--accent1);">续写明天</div><div class="stat-label">parent_work_id 连续叙事<br>每日重回，情感图谱持续生长</div></div>
     </div>
     <div style="margin-top:2em;display:flex;flex-direction:column;align-items:center;gap:.5em;">
-      <canvas id="qr-food" style="border-radius:10px;"></canvas>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAYAAABSZ763AAAExElEQVR4nO3dUW7kOBBEQWsx97+y9gSaXQEkHkuO+Lbb6nYnCCSK5M8PAAAAAAAAAAAAALtcb3/hvu/7Z4Druq6T3tfb53n7nE+vv+p9rfo8T/u/rPL2ff2z7C8D/5vgQUDwICB4EBA8CPw5rbV767Q2ctXzrGoFT2tZV7mGf9+seBAQPAgIHgQEDwKCB5NbzSfVrOCU2b9Vs5dPP//VGc4p37cnVjwICB4EBA8CggcBwYMvtprTnTYzuXt29Ks7xE9jxYOA4EFA8CAgeBAQPAhoNeOZvd2zhVULqu38OyseBAQPAoIHAcGDgODBF1vN6vzDt3bv+F71PNVO9qefr24vmv59s+JBQPAgIHgQEDwICB5MbjXN5rXnRu5uL0+bybyHf9+seBAQPAgIHgQEDwKCB4ERc20r7T5nckprWs1MVnemn8aKBwHBg4DgQUDwICB4EHjdJE2Z5Zt+q07VUlYzpU+mfH/esuJBQPAgIHgQEDwICB4EjjtXc/dtNbtv1dl9p/lu02cpr0Xt+u4W2ooHAcGDgOBBQPAgIHgQyJqq3bN8Zg5/50zpvXmWeNX3yooHAcGDgOBBQPAgIHgQGDF/d+LO9ynt6/Q71p9MP/HAigcBwYOA4EFA8CAgeDBhB7rzG9c+z/TP87Rbh96q3pcVDwKCBwHBg4DgQUDwIDDmXM3qXMfT2sLds46nfc73kB3xb1nxICB4EBA8CAgeBAQPJrSab9un3TOQT3a3hVX7N6Xlm9IuvuVcTRhM8CAgeBAQPAgIHnxxB3rVFp62s/u0WcS3s5pTWsf7sP/7EyseBAQPAoIHAcGDgOBBwB3o//E602cRd7dzU24Fug47x9WKBwHBg4DgQUDwICB4EBhzB/pbp7WIp824Tv98pn/+VjwICB4EBA8CggcBwYMJrWY1a/fWlFnBqs07bZb1yZTP5y0rHgQEDwKCBwHBg4DgQWBZc3ParTrT27MpLeJpd8SvYlYTPkjwICB4EBA8CAgeBEY0jl9o4d6+zpPq3NFVr//bZlyfWPEgIHgQEDwICB4EBA8m70CfMnN4Wku2ymmzmqfdBrWKWU0YTPAgIHgQEDwICB58sdXc/fpT2sLTPs8nv+39vmVWEwYTPAgIHgQEDwKCB4E/u//A7harOsdyldNmF3fPrH51VvYtKx4EBA8CggcBwYOA4MFvmtU8rUU87W706edbTmkXr2gnuxUPAoIHAcGDgOBBQPAgMP62oLem3zJzWhv81ldPMLicqwnnEzwICB4EBA8CggcTdqCfNmu3agf07vc7pY18es7q+e/DbgtyriYMJngQEDwICB4EBA8Cx90W9NU72afPFk65hece8pxWPAgIHgQEDwKCBwHBg990W9BbVWv61fb17fPsPlfzPmyWdffzWPEgIHgQEDwICB4EBA++2GpOsfuczCnt5Wlt87V5pnTVzztXEwYQPAgIHgQEDwKCBwGt5rDzM6sTAHa3u0+mt75PrHgQEDwICB4EBA8CggdfbDVP2zm++/ac0+4KP+38zFV/94p2jq9ixYOA4EFA8CAgeBAQPJjcak5pk0677WiVVedbVi3otegcztNa5SdWPAgIHgQEDwKCBwHBAwAAAAAAAAAAAAB+vuRfImaB4xax33gAAAAASUVORK5CYII=" width="120" height="120" style="border-radius:10px;">
       <span style="font-size:11px;color:var(--muted);">扫码体验 Demo</span>
     </div>
   </div>
@@ -527,7 +526,7 @@
       <div class="stat"><div class="stat-num" style="color:var(--accent2);">48天</div><div class="stat-label">叙事窗口</div></div>
     </div>
     <div style="margin-top:2em;display:flex;flex-direction:column;align-items:center;gap:.5em;">
-      <canvas id="qr-wc" style="border-radius:10px;"></canvas>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAYAAACJm/9dAAAD2klEQVR4nO3dUcrjOBBG0WiY/W/ZvYHPA2pKU6XknOduJ7/JRVDI8ucDAAAAAAAAAADw/dbuf3ie5/lcYK21Kv6u3evsXn/a31X176fZvW//nPsqcC9hQCAMCIQBgTAg+PdTpGp6s2t3KtI1faqaJp3+3Kr7sC75PbyxYkAgDAiEAYEwIBAGnJxKTdsjVOX0XqBpe5lO3+fnkt+DFQMCYUAgDAiEAYEwoGMqdYvbpzen92itpqlgFysGBMKAQBgQCAMCYUDwc1Op03uQTp+/NO2cq29lxYBAGBAIAwJhQCAM6JhK3bLHZtq0p2oaVnX9X/s9WDEgEAYEwoBAGBAIA05OpW7Ze9O1J6prCtT1RN5zye/hjRUDAmFAIAwIhAGBMKBiKnXLXpdd06ZDt0x11pf+HqwYEAgDAmFAIAwIhAHB9kRh2mnYt+xlOv1E3unr7Lrlc99YMSAQBgTCgEAYEAgDgnXLdOj096m6/ptpp6B/6/1ZplJwjjAgEAYEwoBAGBAc39/U9SRa1zSsStc05lu/5y4rBgTCgEAYEAgDAmFAxblSnmj7O9OeKLz93K3TrBgQCAMCYUAgDAiEASfPlXrT9URYla4p1puud+etYU/YnZ5uWTEgEAYEwoBAGBAIAzrOlbplT9G06dMu3/+/mUpBAWFAIAwIhAGBMGDSXqlpT9jd7pbzmt5M23NlxYBAGBAIAwJhQCAMqDhXqkvXeVO3nPv05pY9Y6vofnqCDw4SBgTCgEAYEAgDJr2Dr+u8qWnnI3XtPZt2uvhjrxTMJwwIhAGBMCAQBnzjaefT3uXX9WTir72jcJe9UlBAGBAIAwJhQCAMmPQEX9cep9O6piu3T5meYd/figGBMCAQBgTCgEAYcHKv1LQny7rOg+ras1Tl9icBq1gxIBAGBMKAQBgQCAM6plK716ky7Ym5024/lX0NmxZaMSAQBgTCgEAYEAgDglGTlf9D196e2/eMrWGnu59mxYBAGBAIAwJhQCAM6DjtvMu06c0tp4JXfe4atvdplxUDAmFAIAwIhAGBMODkaefTzkE6/f2r/t7bTwVfh+9D154rKwYEwoBAGBAIAwJhQMc7+KZNP97cMu3p2qv2HP7caaemWzEgEAYEwoBAGBAIAzqmUvS+m2/add5U7Q2rmp5ZMSAQBgTCgEAYEAgDAlOpoaeOn1Y1vXmG7d2qup9WDAiEAYEwIBAGBMKAjqlU19Rl2pRj2rlVVZ6mqdTpKaIVAwJhQCAMCIQBgTAg+Ll38E07P+r2+7Dr9LsOq1gxIBAGBMKAQBgQCAMAAAAAAAAAAAA+v+kPPJO1d/5xLfoAAAAASUVORK5CYII=" width="120" height="120" style="border-radius:10px;">
       <span style="font-size:11px;color:var(--muted);">扫码体验 Demo</span>
     </div>
   </div>
@@ -707,16 +706,7 @@
     else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); go(cur - 1); }
   });
 
-  // generate QR codes
-  function makeQR(id, url, color) {
-    QRCode.toCanvas(document.getElementById(id), url, {
-      width: 120,
-      margin: 1,
-      color: { dark: color || '#ffffff', light: '#00000000' }
-    });
   }
-  makeQR('qr-food', 'https://shenye-shitang.pages.dev/pitch/index.html', '#ff6b6b');
-  makeQR('qr-wc',   'https://aifootball.hub.tutucat.icu/', '#4ecdc4');
   let tx = 0;
   document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; });
   document.addEventListener('touchend', e => {
